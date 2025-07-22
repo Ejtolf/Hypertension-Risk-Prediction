@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# Hypertension-Risk-Prediction
-Kaggle hypertension research project. Explained 
-
 # Hypertension risk prediction
 ---
 Hi there! This is **my second Kaggle project**. Welcome to **HYPERTENSION RISK PREDICTION** project. This project uses synthetic yet realistic healthcare dataset to explore the factors contributing to hypertension and build predictive machine learning models.
