@@ -65,6 +65,53 @@ Best-performing model overall, showing excellent generalization capability.
 - Followed by age, stress score, BMI, and salt intake.
 - Smoking status and exercise level had lesser influence.
 
+![SHAP-Plot: feature importances](/reports//hypertension_risk_shap.png)
+
+# 🩺 Feature-level interpretation
+
+---
+
+### 🩺 `bp_history_0`, `bp_history_2` - **the most influential features**
+
+- Previous blood pressure issues are the strongest predictors
+
+- Clinically intuitive and robust signal
+
+### 👪 `family_history_1`
+
+- Family history present = higher risk
+
+- Absent = lower risk
+
+- Genetic predisposition plays a meaningful role
+
+### 🎂 `age`
+- Older age means higher predicted risk
+
+- Classic age-related hypertension risk captured well
+
+### 🚬 `smoking_status_1`
+- Smoking substantially increases risk
+
+- Non-smoking reduces it
+
+### 😖 `stress_score`
+- Higher stress increases risk (and lower decreases)
+
+### 🧂 `salt_intake`
+- High salt intake is the reason of risk growth
+
+### 😴  `sleep_duration`
+- Short sleep => increased risk
+
+- Longer sleep => reduced risk
+
+### ⚖️ `bmi`
+- Higher BMI makes a risk higher, lower more protective
+
+### 🏃 `exercise_level_1`, `excercise_level_2`
+- Physical activity may act indirectly (via BMI or stress)
+
 ## 6. Conclusions and Recommendations
 
 - Random Forest and XGBoost models significantly outperform Logistic Regression for hypertension classification.
